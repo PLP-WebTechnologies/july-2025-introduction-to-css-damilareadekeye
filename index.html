@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en-NG">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS Basics & Box Model — Nimbus Nigeria</title>
+    <meta name="description" content="Practice CSS basics and the Box Model with a Nigerian‑themed demo page: headings, cards, buttons, spacing, borders, and layout." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title">Nimbus Nigeria — CSS Basics & Box Model</h1>
+        <nav aria-label="Primary" class="site-nav">
+          <ul>
+            <li><a href="#intro" aria-current="page">Intro</a></li>
+            <li><a href="#box-model">Box Model</a></li>
+            <li><a href="#cards">Cards</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="container">
+      <section id="intro" class="section">
+        <h2>Welcome</h2>
+        <p>
+          This page demonstrates core CSS styling and the <strong>CSS Box Model</strong> using a simple, clean layout.
+          Content and examples are localized with a Nigerian feel — think busy Lagos streets and cool Abuja offices.
+        </p>
+        <p>
+          Open the CSS file <code>styles.css</code> to see how margins, padding, borders, and backgrounds shape each
+          element’s layout.
+        </p>
+      </section>
+
+      <section id="box-model" class="section">
+        <h2>Box Model Playground</h2>
+        <p>
+          Each colored box shows how <em>content</em>, <em>padding</em>, <em>border</em>, and <em>margin</em> affect
+          space. All boxes share the same content width, but different padding/border values change the total size.
+        </p>
+
+        <div class="box-grid">
+          <div class="box-sample box--content" aria-label="Content only box">
+            <h3 class="box-title">Content only</h3>
+            <p>No padding, 0 border, small margin. Tight like morning BRT schedules.</p>
+          </div>
+
+          <div class="box-sample box--padded" aria-label="Padded box">
+            <h3 class="box-title">Padded</h3>
+            <p>Added padding creates breathing room around text — like shade under a palm tree.</p>
+          </div>
+
+          <div class="box-sample box--spacious" aria-label="Padded with border box">
+            <h3 class="box-title">Padded + border</h3>
+            <p>Border visually defines the edge; margin separates this box from neighbors.</p>
+          </div>
+        </div>
+
+        <aside class="note" aria-live="polite">
+          Tip: With <code>box-sizing: border-box;</code>, declared widths include padding and border for predictable
+          sizing.
+        </aside>
+      </section>
+
+      <section id="cards" class="section">
+        <h2>Card Layout</h2>
+        <p>Simple product cards styled with consistent spacing, borders, and backgrounds.</p>
+
+        <div class="card-grid">
+          <article class="card">
+            <header class="card__header">
+              <h3 class="card__title">Nimbus Core</h3>
+            </header>
+            <div class="card__body">
+              <p>Everyday comfort. Great value for students and creators across Naija.</p>
+              <ul class="list">
+                <li>30‑hour battery</li>
+                <li>Lightweight fit</li>
+                <li>Matte Graphite</li>
+              </ul>
+            </div>
+            <footer class="card__footer">
+              <span class="badge">₦145,000</span>
+              <button class="btn">Choose</button>
+            </footer>
+          </article>
+
+          <article class="card">
+            <header class="card__header">
+              <h3 class="card__title">Nimbus Plus</h3>
+            </header>
+            <div class="card__body">
+              <p>Balanced sound with ANC — shine for remote work from Lagos to Enugu.</p>
+              <ul class="list">
+                <li>40‑hour battery</li>
+                <li>Adaptive noise cancelation</li>
+                <li>Multipoint pairing</li>
+              </ul>
+            </div>
+            <footer class="card__footer">
+              <span class="badge badge--primary">₦195,000</span>
+              <button class="btn btn--primary">Choose</button>
+            </footer>
+          </article>
+
+          <article class="card">
+            <header class="card__header">
+              <h3 class="card__title">Nimbus Studio</h3>
+            </header>
+            <div class="card__body">
+              <p>For producers and audiophiles — detail that carries your sound to the world.</p>
+              <ul class="list">
+                <li>45‑hour battery</li>
+                <li>Studio‑tuned drivers</li>
+                <li>Hard case included</li>
+              </ul>
+            </div>
+            <footer class="card__footer">
+              <span class="badge">₦245,000</span>
+              <button class="btn">Choose</button>
+            </footer>
+          </article>
+        </div>
+      </section>
+
+      <section id="buttons" class="section">
+        <h2>Buttons and Spacing</h2>
+        <div class="button-row">
+          <button class="btn">Default</button>
+          <button class="btn btn--primary">Primary</button>
+          <button class="btn btn--outline">Outline</button>
+        </div>
+        <div class="button-row button-row--spaced">
+          <button class="btn">Compact</button>
+          <button class="btn btn--primary">Comfort</button>
+          <button class="btn btn--outline">Spacious</button>
+        </div>
+        <p class="muted">Note how different margins and padding affect alignment and touch targets.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <address>
+          Nimbus Audio Nigeria • Victoria Island, Lagos • <a href="tel:+2348163180829">+234 816 318 0829</a>
+        </address>
+        <p><small>&copy; <time datetime="2025">2025</time> Nimbus Audio Nigeria</small></p>
+      </div>
+    </footer>
+  </body>
+  
+</html>
+
+
